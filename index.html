@@ -7,10 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <link rel="stylesheet" href="/css/style.css">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
@@ -24,11 +26,18 @@
             <a class="navbar-brand" href="#">Mijn Portfolio</a>
             <ul class="nav nav-pills">
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="#scrollspyHeading1"><i class="bi bi-house"></i></a>
+                    <a class="nav-link text-white" href="#scrollspyHeading1">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-white" href="#scrollspyHeading2">Projects</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#scrollspyHeading3">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#scrollspyHeading4">Contact</a>
+                </li>
+
                 <li class="nav-item dropdown">
                     <a class="nav-link text-white" data-bs-toggle="dropdown" href="#" role="button"
                         aria-expanded="false">Dropdown</a>
@@ -46,10 +55,10 @@
     </div>
 
 
-    <div class="home bg-primary m-100">
+    <div class="home bg-body-tertiary m-100">
         <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%"
             data-bs-smooth-scroll="true" class="scrollspy-example p-3 rounded-2" tabindex="0">
-            <h4 id="scrollspyHeading1">Home</h4>
+            <h4 class="text-center" id="scrollspyHeading1">Home</h4>
             <img class="w-25 p-3 rounded-5" src="/img/ann.jpg" alt="">
             <p class="d-flex justify-content-end w-75">Hallo,</p>
             <p class="d-flex justify-content-end w-75">Ik ben Erfan,</p>
@@ -58,109 +67,79 @@
     </div>
 
 
-        <div class="container projects">
-            <h4 class="text-center" id="scrollspyHeading2">Projects</h4>
-            <div class="cards d-flex justify-content-center">
-                <div class="card" style="width: 18rem;">
-                    <img src="/img/ann.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
+    <div class="container mt-5 projects">
+        <h4 class="text-center underline-black text-decoration-underline" id="scrollspyHeading2">Projects</h4>
+        <div class="cards d-flex mt-5 justify-content-center">
+            <div class="card" style="width: 18rem;">
+                <img src="/img/ann.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
-                <div class="card" style="width: 18rem;">
-                    <img src="/img/ann.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="/img/ann.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
-                <div class="card" style="width: 18rem;">
-                    <img src="/img/ann.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="/img/ann.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
             </div>
         </div>
-        <div class="container">
-        <h4 class="d-flex justify-content-center" id="scrollspyHeading3">About</h4>
-        <p class="w-25">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam ipsum ratione iste? Odio voluptas, ex nesciunt
-            temporibus tempore provident officia ut? Distinctio perferendis harum ab iure commodi voluptates inventore
-            pariatur provident iste ipsum quam nulla minus facere illo, fugiat rerum mollitia, quod odio alias deserunt
-            excepturi similique cumque! Accusantium nulla ea itaque, nam et placeat, blanditiis quam nesciunt similique
-            doloremque amet quasi ducimus iste asperiores, quia dolor? Earum perferendis nobis incidunt molestias
-            possimus magni quibusdam, enim quae, quo facere doloribus ipsam, rerum unde iusto odit!</p>
-        <p class="w-25">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure rem, at illo quidem pariatur nulla
-            voluptatibus temporibus. Repellendus, neque porro hic voluptatum molestiae error nam quam amet saepe debitis
-            sunt temporibus quaerat dolorem laborum tempora animi quibusdam dolorum expedita modi corrupti. Neque dolor
-            accusamus facere, officia ratione sapiente, dolores asperiores obcaecati minima cupiditate mollitia! Quam
-            aperiam a quasi maxime alias consequuntur. Soluta, illo! Placeat, eos facere. Voluptatibus nulla quae
-            architecto, iure et, tenetur numquam quia reprehenderit, expedita veniam mollitia placeat. Debitis est
-            aliquam, tempora sunt obcaecati voluptates nihil neque mollitia molestias itaque eos, fugit, alias dolorem
-            ducimus optio! Nam, illo!</p>
-        <p class="w-25">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore laudantium vitae velit repellendus quis et
-        consequuntur unde pariatur incidunt nihil nesciunt tempore eveniet cumque debitis, quo vero ea facilis quibusdam
-        voluptatibus aliquam eaque quod. Sed tempora architecto unde illo, sit necessitatibus inventore cupiditate
-        doloremque provident nesciunt accusamus vel libero, dicta id eligendi autem labore neque accusantium, tenetur
-        mollitia exercitationem explicabo. Sint pariatur cupiditate fuga quis consequatur illo voluptas molestias, iure
-        magnam, dignissimos eaque quaerat nam aliquid. Quo odio assumenda aperiam suscipit id autem cumque dolore ullam
-        amet neque dolor dicta, modi magni earum voluptates iusto velit! Aliquam laboriosam adipisci in!</p>
     </div>
-        <h4 id="scrollspyHeading4">Fourth heading</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident id quaerat hic quasi aspernatur placeat!
-            Debitis, ex iusto nisi doloribus quae eaque assumenda tempora minima labore magnam voluptatibus perspiciatis
-            dolore suscipit veniam esse temporibus fugit dicta error praesentium nostrum eligendi magni blanditiis? Nemo
-            sit molestias nam unde, alias incidunt aut fuga. Repellendus, quas odio illo necessitatibus magnam molestiae
-            sequi praesentium ipsum, ipsa doloremque fugiat. Atque, magni minus? Atque magni tempora quo numquam
-            perspiciatis dolores minus autem sint harum dicta. Qui in quibusdam illum maiores dignissimos ducimus quas
-            molestiae dolore, dicta, sint a adipisci officiis fugiat, culpa quae animi voluptas exercitationem minus
-            rerum libero necessitatibus. Enim sunt libero similique debitis, voluptatibus non, provident veniam quaerat
-            sint numquam repudiandae veritatis corporis illum eum voluptates ut, repellat ab eaque placeat. Magnam
-            corrupti molestias eius maiores, alias laudantium neque placeat non debitis officiis? Temporibus, sed,
-            voluptas tempora provident, officia recusandae vel sunt blanditiis cumque necessitatibus doloremque dolores
-            culpa labore natus animi? Cumque, quisquam magnam. Numquam velit aut veritatis voluptatibus explicabo,
-            dignissimos reprehenderit ab repellendus molestias minima asperiores voluptatum nihil, vel ipsa architecto
-            dolor vitae dolorem cupiditate! Commodi repellendus veritatis laborum voluptatum maiores, totam, ab sapiente
-            at dolorum inventore reprehenderit magni odit soluta id quibusdam delectus quasi facere tempore? Nostrum
-            illum vitae recusandae. Facere iusto aliquam in, corporis ullam aut. Error, sint. Facere ut eius deleniti
-            explicabo aut eveniet incidunt esse, quis hic a quaerat exercitationem, modi ipsum obcaecati unde aspernatur
-            non provident voluptate, debitis et! Eligendi sunt similique iusto officia molestias eaque doloremque quia,
-            eum, repudiandae asperiores vero optio consectetur! Provident soluta ratione esse iusto vero voluptas nam
-            accusamus voluptates dolore. Distinctio excepturi voluptatum, aut explicabo fugit alias accusamus officiis
-            natus nulla rem possimus dolorem. In voluptates molestias molestiae, dignissimos, suscipit consectetur et
-            sed voluptatibus amet aliquam modi aliquid quod reiciendis officiis, sequi saepe?</p>
-        <h4 id="scrollspyHeading5">Fifth heading</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic vero nihil deleniti obcaecati reprehenderit
-            illo ab, vel est assumenda voluptates suscipit iure facere! Quasi nobis laudantium similique dolore
-            molestiae dolores! Mollitia omnis eaque ab enim dolor ea qui alias animi temporibus, accusantium porro quis
-            cumque eveniet repudiandae ducimus minima nostrum vitae facere a nihil quisquam debitis nemo nam? Veritatis
-            explicabo ut numquam iste voluptatem nobis error consectetur facilis facere unde inventore asperiores
-            officiis, sint voluptas natus aspernatur corporis, ex tempora dicta tenetur. Blanditiis, similique mollitia
-            ipsa dolorum aliquid, eius quibusdam cumque consequatur, hic quae quos illum nostrum excepturi ipsum itaque.
-            Magni nesciunt tenetur tempora voluptatibus quae, inventore libero enim vero esse fugiat dolorem culpa
-            reprehenderit cumque cum illum commodi. Corrupti molestias, similique corporis vero reiciendis commodi
-            voluptatibus ab doloribus nam nemo cupiditate minima non est natus earum nisi, animi, labore excepturi a!
-            Inventore facilis cupiditate consequatur reprehenderit quibusdam. Vel dolor modi aliquid laborum officiis
-            earum! Hic provident iure sequi id soluta repellendus et laboriosam tempore possimus ea facilis eum
-            consequatur ad pariatur laborum quidem, fugiat dicta quaerat, voluptates minus officia explicabo nemo
-            adipisci. Dolores incidunt vitae, dicta porro explicabo similique officia cum expedita suscipit a quod
-            quibusdam tempora non recusandae optio exercitationem ad illum modi sunt voluptate maxime. Cumque recusandae
-            consectetur soluta deleniti, itaque quasi quas cupiditate officia adipisci, ullam eos tenetur obcaecati id
-            blanditiis accusamus, quod facilis natus corrupti? Quod eveniet temporibus dignissimos earum dolores, id
-            assumenda illum natus fugit consequuntur nesciunt deleniti voluptatum iste, a sit molestiae quos quidem
-            neque vel magnam in? Incidunt sapiente quae harum architecto, laudantium nihil delectus in maxime laborum
-            assumenda optio molestias quidem ratione quo perferendis aut, ex non magni earum maiores veniam cumque
-            itaque officiis omnis. Molestiae dignissimos atque error alias dolores qui omnis fugit tenetur, sequi
-            eveniet officia labore distinctio nisi!</p>
-    
+    <div class="p-5 bg-body-tertiary mt-5">
+        <h4 class="d-flex underline-black text-decoration-underline  justify-content-center" id="scrollspyHeading3">
+            About</h4>
+        <div class="d-flex justify-content-space-evenly mt-5">
+            <img class="w-25" src="/img/ann.jpg" alt="">
+            <div class="d-flex justify-content-center">
+                <p class=" w-50">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam ipsum ratione iste? Odio
+                    voluptas, ex nesciunt
+                    temporibus tempore provident officia ut? Distinctio perferendis harum ab iure commodi voluptates
+                    inventore
+                    pariatur provident iste ipsum quam nulla minus facere illo, fugiat rerum mollitia, quod odio alias
+                    deserunt
+                    excepturi similique cumque! Accusantium nulla ea itaque, nam et placeat, blanditiis quam nesciunt
+                    similique
+                    doloremque amet quasi ducimus iste asperiores, quia dolor? Earum perferendis nobis incidunt
+                    molestias
+                    possimus magni quibusdam, enim quae, quo facere doloribus ipsam, rerum unde iusto odit!</p>
+            </div>
+        </div>
+    </div>
+    <div class="contact p-5">
+        <h4 class="text-center underline-black text-decoration-underline" id="scrollspyHeading4">Contact</h4>
+        <h2 class="text-center mt-5">Contact me!</h2>
+        <form class="w-25">
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" name="" id="">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+    </div>
+    <h4 id="scrollspyHeading5">Fifth heading</h4>
 </body>
 
 </html>
