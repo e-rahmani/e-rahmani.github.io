@@ -1,0 +1,7 @@
+.home{
+    background-image: url(/img/dub.jpg);
+}
+
+a:hover{
+    background-color: blue;
+}
